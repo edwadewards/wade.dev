@@ -1,0 +1,174 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(img/bg.gif) no-repeat center center/cover fixed;
+  color: #333;
+  font-family: "Poppins", sans-serif;
+  display: grid;
+  place-items: center;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 250px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+section {
+  border-radius: 10px;
+  background-color: #efefef;
+  width: 100%;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  background: transparent;
+  width: min(95%, 1300px);
+}
+
+.intro {
+  margin-top: 0.75rem;
+}
+.intro article {
+  width: min(100%, 900px);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #333;
+}
+.intro article .clip-path {
+  -webkit-clip-path: polygon(50% 0%, 100% 0, 93% 100%, 8% 100%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0, 93% 100%, 8% 100%, 0 0);
+  border-radius: 5%;
+}
+.intro article a {
+  font-size: 1.25rem;
+}
+.intro article a:hover {
+  color: #0e4a68;
+}
+.intro article p {
+  max-width: 50ch;
+  text-align: center;
+}
+.intro aside ul {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.intro aside ul li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1rem;
+}
+.intro aside ul li img {
+  margin: 0 0.5rem;
+}
+
+.playlist {
+  display: grid;
+  place-items: center;
+  width: min(90%, 600px);
+}/*# sourceMappingURL=style.css.map */
