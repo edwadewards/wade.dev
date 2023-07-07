@@ -98,7 +98,7 @@ a {
 }
 
 img {
-  max-width: 250px;
+  max-width: 100%;
 }
 
 ul {
@@ -171,4 +171,79 @@ section {
   display: grid;
   place-items: center;
   width: min(90%, 600px);
+}
+
+.bio {
+  display: grid;
+  place-items: center;
+}
+.bio article {
+  width: min(100%, 800px);
+}
+.bio a {
+  color: #0e4a68;
+}
+.bio h1 {
+  font-size: clamp(1.25rem, 1.25rem + 1vw, 1.8rem);
+  margin-bottom: 3rem;
+}
+.bio h1 .pronunciation {
+  font-size: clamp(0.85rem, 0.85rem + 0.5vw, 1rem);
+  font-weight: 500;
+}
+.bio h2 {
+  margin-bottom: 1.25rem;
+}
+.bio figcaption {
+  font-size: 0.85rem;
+}
+.bio ul {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  list-style-type: disc;
+  margin-left: 3.5rem;
+  margin-top: 1.25rem;
+}
+
+.sports-logos {
+  display: flex;
+  gap: 0.6rem;
+}
+.sports-logos .logo {
+  border: 1px solid #333;
+  height: 80px;
+  width: 80px;
+  padding: 6px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.75rem;
+}
+.sports-logos img {
+  max-width: 100%;
+}
+
+.books-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(380px, 50%), 1fr));
+  gap: 1em;
+}
+.books-container .card {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.25rem;
+  border: 1px solid #333;
+  border-radius: 3px;
+}
+
+.blog article {
+  width: min(100%, 800px);
+}
+.blog article figure {
+  max-width: 100%;
+}
+.blog article figure img {
+  max-width: 100%;
 }/*# sourceMappingURL=style.css.map */

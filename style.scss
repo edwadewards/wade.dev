@@ -21,7 +21,7 @@ a {
 }
 
 img {
-  max-width: 250px;
+  max-width: 100%;
 }
 
 ul {
@@ -104,4 +104,93 @@ section {
   display: grid;
   place-items: center;
   width: min(90%, 600px);
+}
+
+.bio {
+  display: grid;
+  place-items: center;
+  
+  article {
+    width: min(100%, 800px);
+  }
+
+  a {
+    color: $clr-primary;
+  }
+
+  h1 {
+    font-size: clamp(1.25rem, 1.25rem + 1vw, 1.8rem);
+    margin-bottom: 3rem;
+
+    .pronunciation {
+      font-size: clamp(.85rem, .85rem + .5vw, 1rem);
+      font-weight: 500;
+    }
+  }
+
+  h2 {
+    margin-bottom: 1.25rem;
+  }
+
+  figcaption {
+    font-size: .85rem;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    list-style-type: disc;
+    margin-left: 3.5rem;
+    margin-top: 1.25rem;
+  }
+}
+
+.sports-logos {
+  display: flex;
+  gap: .6rem;
+
+  .logo {
+    border: 1px solid #333;
+    height: 80px;
+    width: 80px;
+    padding: 6px;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-bottom: .75rem;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
+.books-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(380px, 50%), 1fr));
+  gap: 1em;
+  // max-width: 860px;
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.25rem;
+    border: 1px solid #333;
+    border-radius: 3px;
+  }
+}
+
+.blog {
+
+  article {
+    width: min(100%, 800px);
+    figure {
+      max-width: 100%;
+      img {
+        max-width: 100%;
+      }
+    }
+  }
 }
