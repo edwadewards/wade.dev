@@ -130,6 +130,9 @@ section {
 .intro {
   margin-top: 0.75rem;
 }
+.intro .intro-img {
+  margin: 0 auto;
+}
 .intro article {
   width: min(100%, 900px);
   display: flex;
@@ -137,6 +140,7 @@ section {
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #333;
+  margin: 0 auto;
 }
 .intro article .clip-path {
   -webkit-clip-path: polygon(50% 0%, 100% 0, 93% 100%, 8% 100%, 0 0);
@@ -238,12 +242,74 @@ section {
   border-radius: 3px;
 }
 
+.blog h2 {
+  font-size: clamp(1.25rem, 1.25rem + 1vw, 1.6rem);
+}
 .blog article {
   width: min(100%, 800px);
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 8px;
 }
 .blog article figure {
-  max-width: 100%;
+  width: 100%;
 }
 .blog article figure img {
   max-width: 100%;
+  box-shadow: 2px 2px 8px #ccc;
+}
+
+.contact {
+  max-width: 600px;
+  position: relative;
+  display: grid;
+}
+.contact::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30%;
+  background-color: #efefef;
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+  box-shadow: 0 0 30px #333;
+}
+.contact form {
+  padding-top: 5rem;
+  z-index: 2;
+}
+.contact form input, .contact form textarea {
+  border: none;
+  border-bottom: 1px solid #333;
+  font-size: 1.1rem;
+  padding: 3px;
+  background: transparent;
+  width: 100%;
+  margin: 1rem 0;
+}
+.contact form label {
+  align-self: flex-start;
+}
+.contact form button {
+  border: none;
+  outline: 0;
+  font-size: 1.75rem;
+  padding: 12px;
+  color: #fff;
+  background-color: #0e4a68;
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  place-content: center;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+.contact form button:hover {
+  scale: 1.1;
 }/*# sourceMappingURL=style.css.map */

@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="img/favicon.png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Wade's Blog Thingy</title>
@@ -11,7 +12,7 @@
 
   <div class="container flex-col">
     <section class="intro flex-col p-1">
-      <article class="p-1">
+      <article class="p-2">
         <div class="intro-img flex-col">
           <div class="clip-path">
             <img src="img/tot.jpg" alt="it is i" height="200">
@@ -34,9 +35,9 @@
             </li>
           </ul>
         </div>
-        <p><i class="fa-solid fa-hand-wave"></i> Hello fellow humans (& spam bots), my name is <strong>Wade Edwards</strong> and I am Software Developer and you, you lucky duck, have stumbled upon my blog site thingy. I made this for fun and to practice my non-existant writing skills. I'll write about tech stuff and maybe the occasional non-tech related thought that occupies my brain. So kick back, relax, and enjoy some tunes while you read my mind.</p>
+        <p class="my-1"><i class="fa-solid fa-hand-wave"></i> Hello fellow humans (& spam bots), my name is <strong>Wade Edwards</strong> and I am Software Developer and you, you lucky duck, have stumbled upon my blog site thingy. I made this for fun and to practice my non-existant writing skills. I'll write about tech stuff and maybe the occasional non-tech related thought that occupies my brain. So kick back, relax, and enjoy some tunes while you read my mind.</p>
       </article>
-      <aside class="p-1">
+      <aside class="p-2">
         <ul>
           <li><strong>What I'm up to:</strong> 
               <img src="img/mern.png" alt="mern stack logo" height="50"> Learning the MERN stack
@@ -52,7 +53,7 @@
       <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6gzVzWUUCGwuKuS1H4TvHZ?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
 
-    <section class="bio">
+    <section class="bio p-2">
       <!-- <header><div class="background-banner"></div></header> -->
       <article class="m-3 index-2">
         <h1>Wade Edwards <span class="pronunciation">[ED WAYD-WERDZ]</span></h1>
@@ -177,12 +178,15 @@
       </article>
     </section>
 
-    <section id="blog" class="my-3 p-2">
-      <article>
-        <h3 class="title">
-          Tab Layout Demo: How to code this fun design.
-        </h3>
-        <span class="subtitle">July 7, 2023 | Wade Edwards</span>
+    <section id="blog" class="blog my-3 p-2">
+      <h2 class="p-1">My Writing</h2>
+      <article class="p-1">
+        <header>
+          <h3 class="title">
+            Tab Layout Demo: How to code this fun design.
+          </h3>
+          <span class="subtitle">July 7, 2023 | Wade Edwards</span>
+        </header>
         <figure class="my-2">
           <img src="blog-banners/tab-demo.png" alt="Screenshot of tab layout project">
           <figcaption>
@@ -202,6 +206,16 @@
           </figure>
         </p>
       </article>
+    </section>
+
+    <section id="contact" class="contact my-1 p-2">
+      <form action="" class="flex-col">
+        <button><i class="fa-solid fa-paper-plane"></i></button>
+        <label for="email">From</label>
+        <input type="email" placeholder="enter your email">
+        <label for="message">Message</label>
+        <textarea name="message" id="" rows="4"></textarea>
+      </form>
     </section>
     <!--end of container  -->
   </div>

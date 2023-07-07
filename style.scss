@@ -53,6 +53,10 @@ section {
 .intro {
   margin-top: .75rem;
 
+  .intro-img {
+    margin: 0 auto;
+  }
+
   article {
     width: min(100%, 900px);
     display: flex;
@@ -60,6 +64,7 @@ section {
     align-items: center;
     justify-content: space-between;
     border-bottom: 1px solid $text;
+    margin: 0 auto;
     // gap: 7rem;
 
     .clip-path {
@@ -183,13 +188,83 @@ section {
 }
 
 .blog {
+  h2 {
+    font-size: clamp(1.25rem, 1.25rem + 1vw, 1.6rem);
+  }
 
   article {
     width: min(100%, 800px);
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+
     figure {
-      max-width: 100%;
+      width: 100%;
+
       img {
         max-width: 100%;
+        box-shadow: 2px 2px 8px #ccc;
+      }
+    }
+  }
+}
+
+.contact {
+  max-width: 600px;
+  position: relative;
+  display: grid;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: $clr-light;
+    border-bottom-left-radius: 70px;
+    border-bottom-right-radius: 70px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+    box-shadow: 0 0 30px #333;
+  }
+
+  form {
+    padding-top: 5rem;
+    z-index: 2;
+
+    input, textarea {
+      border: none;
+      border-bottom: 1px solid #333;
+      font-size: 1.1rem;
+      padding: 3px;
+      background: transparent;
+      width: 100%;
+      margin: 1rem 0;
+    }
+
+    label {
+      align-self: flex-start;
+    }
+
+    button {
+      border: none;
+      outline: 0;
+      font-size: 1.75rem;
+      padding: 12px;
+      color: #fff;
+      background-color: $clr-primary;
+      height: 3rem;
+      width: 3rem;
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      place-content: center;
+      margin-bottom: 2rem;
+      cursor: pointer;
+
+      &:hover {
+        scale: 1.1;
       }
     }
   }
