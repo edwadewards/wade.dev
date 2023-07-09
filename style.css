@@ -258,6 +258,11 @@ section {
   max-width: 100%;
   box-shadow: 2px 2px 8px #ccc;
 }
+.blog article .carbon-img {
+  display: block;
+  border-radius: 14px;
+  margin: 1rem 0;
+}
 
 .contact {
   max-width: 600px;

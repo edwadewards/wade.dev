@@ -194,16 +194,38 @@
           </figcaption>
         </figure>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem asperiores neque ut saepe blanditiis modi ipsa alias eos totam. Aspernatur illum quibusdam quos voluptatem tempora voluptas aperiam delectus eaque qui!
+          Hello World, and welcome to my first blog post.
+          <br><br>
+          Today I am going to explain how I made this layout with the different sections living inside tabs that expand on click.
+          <br><br>
+          To begin with, all of your HTML should be wrapped in a container div with the <strong>flex</strong> property applied. This is puts the tabs side-by-side and will be key for responsiveness. Next up, we have to figure out what to do with the content inside the tabs. 
+          <br><br>
+          Your HTML should look something like this:
+          <img src="img/tab-demo.png" alt="code snippet" class="carbon-img" height="300">
+          We're going to take our <strong>.content</strong> class and set it to <strong>display: none</strong> so that we are only left with the tabs alognside each other. 
+          <br><br>
+          Now we can go to work on the colored tabs with the class of <strong>.tab</strong>. Set the height and width, I used 100vh height and 60px for width but this can vary based on personal choice. The <strong>.tab-btn</strong> has the same height and width and the background-colors applied. The <strong>.tab-title</strong> has a <strong>rotate: 90deg</strong> set on them. I used span tags so I had to also apply <strong>display: block</strong> for the transform to take effect.
+          <br>
+          Now, let's get the tabs working.
           <figure class="my-1">
             <img src="blog-banners/tab-demo.gif" alt="the project in action">
             <figcaption>
               Smooth transitions made via CSS keyframes
             </figcaption>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam autem, maxime voluptatem sequi modi necessitatibus corrupti labore deleniti doloremque odio officia delectus tempore cum est unde minima quam iste accusamus?
-            <br><br>
-            Iure sed praesentium nostrum non sapiente optio veritatis distinctio. Non dignissimos nemo cum ratione nostrum ea officia vero dolores voluptatibus incidunt? Saepe nihil excepturi non expedita sunt velit dolorum dolores!
           </figure>
+          To do this, our width on the <strong>.tab-btn</strong> will come back into play. Along with some JavaScript classes. We will need to apply a class on the tabs with a JS event listener. 
+          <img src="img/tab-demo.png" alt="code snippet" class="carbon-img" height="300">
+          First, we set the <strong>.tab-active class</strong> to the home tab. This make sure the inner content of the home tab is visible on page load. Next up, we loop through our tabs and add the click event listener and have it check for the class. It removes the class where applied (home-tab by default) and then adds the class on the tab that has been clicked. 
+          <br><br>
+          Now we use the active class in our CSS to put on the finishing touches. Start by adjusting the tab width. Remember, I used 60px as a default on the <strong>.tab</strong> class. Here we will select the <strong>.tab-active</strong> and add <strong>width: calc(100% - 180px)</strong>. This takes 100% and subtracts the width of the three inactive tabs. If you set your tabs to 40px you may need to adjust your calc. Now we target the <strong>.content</strong> class and select it with the active class. <strong>.active-tab > .content</strong> and set the content to <strong>display: flex</strong>. This will get the content to show for only the selected tab that has the active class applied.
+          <br><br>
+          One last thing, your content will come in looking very clunky so let's animate it for a more smooth transition. This is where the <strong>.fade-in</strong> class finally comes into play. We will set <strong>opacity: 0</strong> to the class. It is inside the content class that is set to <strong>display: none</strong>, but since we can't animate the display property, we will animate the fade-in container class with CSS keyframes. 
+          <img src="img/tab-demo_animation.png" alt="code snippet" class="carbon-img" height="300">
+          This will make the content fade in and out smoothly after the tabs have expanded and retracted.
+          <br><br>
+          I hope you've enjoyed this tutorial. I plan to make more in the future. 
+          <br><br>
+          I've also placed the code over at <a href="https://codepen.io/edwadewards/pen/zYMEGbB" target="_blank" rel="noopener noreferrer">Codepen</a>
         </p>
       </article>
     </section>
