@@ -82,6 +82,7 @@ section {
 
     p {
       max-width: 50ch;
+      margin: 1rem auto;
       text-align: center;
     }
   }
@@ -216,7 +217,8 @@ section {
 }
 
 .contact {
-  max-width: 600px;
+  // max-width: 600px;
+  width: min(95%, 600px);
   position: relative;
   display: grid;
 
@@ -272,6 +274,32 @@ section {
       &:hover {
         scale: 1.1;
       }
+    }
+  }
+}
+
+@media (max-width: 568px) {
+  .container {
+    width: 100%;
+    background-color: $clr-light;
+  }
+  .contact {
+    button {
+      order: 1;
+      align-self: flex-start;
+      margin-top: 1rem;
+    }
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      content: 'Get in touch.';
+      position: absolute;
+      top: 3.5rem;
+      left: 2rem;
+      font-size: 1.25rem;
     }
   }
 }
