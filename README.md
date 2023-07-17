@@ -15,4 +15,4 @@ This may eventually turn into a portfolio project with writing in it.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/15f344c2-6661-4aaa-b9f8-d21dcd18264e/deploy-status)](https://app.netlify.com/sites/wadecdev/deploys)
 
-![](https://github.com/edwadewards/wade-dev-portfolio/blob/main/blog-site.png)
+![](https://github.com/edwadewards/wade.dev/blob/main/blog-site.png)
